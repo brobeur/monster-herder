@@ -9,16 +9,16 @@ TagManager:
   - Player
   - Wall
   - Fence
+  - Boundary
+  - LakeBoundary
   - 
   - 
   - 
   - 
   - 
-  - cube
   - 
-  - enemy
-  - tree
-  - enemyDemon
+  - 
+  - 
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -34,8 +34,8 @@ TagManager:
   User Layer 11: Rock
   User Layer 12: Wall
   User Layer 13: Fence
-  User Layer 14: 
-  User Layer 15: 
+  User Layer 14: Boundary
+  User Layer 15: LakeBoundary
   User Layer 16: 
   User Layer 17: 
   User Layer 18: 
