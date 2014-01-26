@@ -48,9 +48,10 @@
   <ItemGroup>
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_BOO.boo" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
-     <None Include="Assets\Asset Store\Nobiax Free Rocks\Nobiax Free Rocks.txt" />
+     <None Include="Assets\Asset Store (models)\Nobiax Free Rocks\Nobiax Free Rocks.txt" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+     <None Include="Assets\Monster PACKAGES\Monster PACKAGE\Materials\atsv2 vertexlit.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
