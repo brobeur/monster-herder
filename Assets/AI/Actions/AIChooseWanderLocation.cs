@@ -15,8 +15,7 @@ public class AIChooseWanderLocation : RAINAction
 	public float maxY = 100f;
 	public float newDistRange = 50f;
 	public float minTargetDist = 5f;
-	public float terrainY = Terrain.activeTerrain.GetPosition().y;
-
+	public float terrainY = GameObject.Find("ForestTerrain").transform.position.y;
 
     public AIChooseWanderLocation()
     {
@@ -27,26 +26,14 @@ public class AIChooseWanderLocation : RAINAction
     public override void Start(AI ai)
     {
         base.Start(ai);
-		Debug.Log("Started");
-		terrainY = GameObject.Find("ForestTerrain").transform.position.y;
+		//Debug.Log("Started");
     }
-	/*
-	private Vector3 ConvertWorldToTerrainCoordinates(Vector3 wordCor)
-	{
-		Vector3 vecRet = new Vector3();
-		Terrain terrain = Terrain.activeTerrain;
-		Vector3 terPosition =  terrain.transform.position;
-		vecRet.x = ((wordCor.x - terPosition.x) / terrain.terrainData.size.x) * terrain.terrainData.alphamapWidth;
-		vecRet.z = ((wordCor.y - terPosition.z) / terrain.terrainData.size.z) * terrain.terrainData.alphamapHeight;
-		return vecRet;
-	}
-	*/
 
     public override ActionResult Execute(AI ai)
     {
 		Vector3 loc = Vector3.zero;
 		float bodyHeight = ai.Body.renderer.bounds.size.y;
-		Debug.Log("bodyheight");
+		//Debug.Log("bodyheight");
 		List<RAINNavigationGraph> found = new List<RAINNavigationGraph>();
 
 		do{

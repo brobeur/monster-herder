@@ -43,7 +43,7 @@ public class ChooseWanderLocation2 : RAINAction
 	public override ActionResult Execute(AI ai)
 	{
 		Vector3 loc = Vector3.zero;
-		float bodyHeight = ai.Body.renderer.bounds.size.y;
+		float bodyHeight = 1.0f;//ai.Body.renderer.bounds.size.y;
 		Debug.Log("bodyheight");
 		List<RAINNavigationGraph> found = new List<RAINNavigationGraph>();
 		

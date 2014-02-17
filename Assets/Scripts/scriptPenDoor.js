@@ -8,14 +8,14 @@
 //Make sure the main character is tagged "player"
 
 // Smothly open a door
-var smoothOpen = 2.0;
+var smoothOpen = 5.0;
 var smoothClose = 2.0;
 private var opening : boolean;
 private var nearby : boolean;
 
 private var defaultPos : Vector3;
 private var openPos : Vector3;
-var doorOpenHeight = -5;
+var doorOpenHeight = -12;
 
 function Start(){
 	defaultPos = transform.position;
