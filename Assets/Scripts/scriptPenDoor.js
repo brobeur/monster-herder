@@ -41,14 +41,14 @@ function Update (){
 
 //Activate the Main function when player is near the door
 function OnTriggerEnter (other : Collider){
-	if (other.gameObject.tag == "Player") {
+	if (other.gameObject.tag == "Player" || other.gameObject.tag == "Enemy") {
 		nearby = true;
 	}
 }
 
 //Deactivate the Main function when player is go away from door
 function OnTriggerExit (other : Collider){
-	if (other.gameObject.tag == "Player") {
+	if (other.gameObject.tag == "Player" || other.gameObject.tag == "Enemy") {
 		nearby = false;
 	}
 }

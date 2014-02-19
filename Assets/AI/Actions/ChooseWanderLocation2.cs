@@ -20,8 +20,8 @@ public class ChooseWanderLocation2 : RAINAction
 	public ChooseWanderLocation2()
 	{
 		actionName = "ChooseWanderLocation2";
-		Debug.Log("Terrain y: " + terrainY);
-		Debug.Log("constructed");
+		//Debug.Log("Terrain y: " + terrainY);
+		//Debug.Log("constructed");
 	}
 	
 	public override void Start(AI ai)
@@ -44,7 +44,7 @@ public class ChooseWanderLocation2 : RAINAction
 	{
 		Vector3 loc = Vector3.zero;
 		float bodyHeight = 1.0f;//ai.Body.renderer.bounds.size.y;
-		Debug.Log("bodyheight");
+		//Debug.Log("bodyheight");
 		List<RAINNavigationGraph> found = new List<RAINNavigationGraph>();
 		
 		do{
@@ -77,7 +77,7 @@ public class ChooseWanderLocation2 : RAINAction
 				RAIN.Navigation.NavigationManager.GraphType.Navmesh).Count == 0);
 
 		 * */
-		Debug.Log("DONE");
+		//Debug.Log("DONE");
 		
 		return ActionResult.SUCCESS;
 	}

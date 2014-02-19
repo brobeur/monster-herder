@@ -13,14 +13,14 @@ public class AIChooseWanderLocation : RAINAction
 {
 
 	public float maxY = 100f;
-	public float newDistRange = 50f;
+	public float newDistRange = 200f;
 	public float minTargetDist = 5f;
 	public float terrainY = GameObject.Find("ForestTerrain").transform.position.y;
 
     public AIChooseWanderLocation()
     {
         actionName = "AIChooseWanderLocation";
-		Debug.Log("constructed");
+		//Debug.Log("constructed");
     }
 
     public override void Start(AI ai)
